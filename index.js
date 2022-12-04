@@ -2,6 +2,7 @@ const display = document.querySelector(".display");
 const changeBtn = document.querySelector(".up");
 const RunBtn = document.querySelector(".run");
 const push = document.querySelector(".push");
+const coin = document.querySelector(".coin");
 
 const colorCode = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 
@@ -57,8 +58,10 @@ changeBtn.addEventListener("click", () => {
     codeKey = codeKey + colorCode[index];
   }
   display.style.backgroundColor = codeKey;
-});
 
-changeBtn.addEventListener("keyup", () => {
-  alert("sdfdg");
+  const top = Math.floor(Math.random() * 199);
+  const left = Math.floor(Math.random() * 199);
+  coin.style.display = "block";
+  coin.style.top = top + "px";
+  coin.style.left = left + "px";
 });

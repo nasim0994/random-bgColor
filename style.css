@@ -23,6 +23,14 @@ body {
   font-size: 30px;
   text-align: center;
   padding: 20px 0px;
+
+  position: relative;
+}
+
+.coin {
+  width: 70px;
+  display: none;
+  position: absolute;
 }
 
 .actionarea {
